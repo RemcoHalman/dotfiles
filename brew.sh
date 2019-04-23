@@ -15,7 +15,7 @@ brew install tree
 # Browsers
 brew cask install google-chrome
 brew cask install firefox
-# Misc
+# Extra
 brew cask install virtualbox
 brew cask install sourcetree
 brew cask install spotify
@@ -23,12 +23,20 @@ brew cask install skype
 brew cask install gimp
 brew cask install vlc
 brew cask install mvp
-brew cask install caffeine
 brew cask install teamviewer
+# Misc
+brew cask install appcleaner
+brew cask install caffeine
 brew cask install flux
+brew cask install day-o
+
+brew cask install daisydisk
+
 # Code Editors
 brew cask install visual-studio-code
 brew cask install sublime-text
+# Microsoft office
+brew cask install microsoft-office
 
 ### Install Source Code Pro Font
 brew tap homebrew/cask-fonts
