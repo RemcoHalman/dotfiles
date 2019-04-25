@@ -1,0 +1,20 @@
+'logging example':
+  'prefix': 'log_example'
+  'body': """
+    import sys
+    import logging
+    import os 
+
+    pwd = os.path.expanduser('~/')
+
+    # Adding a "filename" argv getting from list
+    scriptrunning = sys.argv[0]
+    loglist = scriptrunning.split("/")
+    # list with split to set loglist number
+    # print(loglist) # change number in basicConfig!
+
+    # Basic config + auto filename log
+    logging.basicConfig(filename=f"{pwd}/Logs/{loglist[6]}.log", level=logging.INFO,
+                        format='%(asctime)s : %(levelname)s : script_line(%(lineno)d) : %(message)s ')
+
+  """

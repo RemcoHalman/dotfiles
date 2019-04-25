@@ -26,6 +26,7 @@ alias sudo='sudo '
 # Get OS X Software Updates, and update installed Ruby gems, Homebrew, npm, and their installed packages
 alias update_system='sudo softwareupdate -i -a'
 
-# Removing all .DS_Store files in current working directory
+# Deleting aliases
 alias rmDS='find . -name *.DS_Store -type f -exec rm {} \;'
-
+alias rmPYC='find . | grep -E "(__pycache__|\.pyc|\.pyo$)" | xargs rm -rf'
+alias clean='rm -rf ~/.Trash/*; rm -rf ~/Downloads/*'
