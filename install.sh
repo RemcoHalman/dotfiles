@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 ############################
 # This script creates symlinks from the home directory to any desired dotfiles in ${homedir}/dotfiles
-# And sets a few working folders
 # And also installs Homebrew Packages
 # And sets Sublime preferences
 ############################
@@ -12,12 +11,6 @@ if [ "$#" -ne 1 ]; then
 fi
 
 homedir=$1
-
-directorys="csv logs Sites"
-for directory in ${directorys}; do
-    echo "Creating $directory in home directory."
-    mkdir ${homedir}/${directory}
-done
 
 # dotfiles directory
 dotfiledir=${homedir}/dotfiles
@@ -39,8 +32,5 @@ done
 # Download Git Auto-Completion
 curl "https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash" > ${homedir}/.git-completion.bash
 
-# Run the Homebrew Script For a full os setup
-# ./brew.sh
-
-# Run the Homebrew Script For a partial os setup
-# ./partial_brew.sh
+# Run the Homebrew Script
+./brew.sh
