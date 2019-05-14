@@ -13,7 +13,7 @@ fi
 
 homedir=$1
 
-directorys="csv logs Sites"
+directorys="csv logs Sites Work"
 for directory in ${directorys}; do
     echo "Creating $directory in home directory."
     mkdir ${homedir}/${directory}

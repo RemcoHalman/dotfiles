@@ -9,6 +9,9 @@
   "terminal.integrated.fontSize": 14,
   "terminal.integrated.fontWeight": "600",
   "editor.formatOnSave": true,
+  "editor.tokenColorCustomizations": {
+    "comments": "#60ff7d"
+  },
   "window.zoomLevel": 1,
   "python.pythonPath": "/usr/local/bin/python3",
   "code-runner.executorMap": {
@@ -24,6 +27,7 @@
   "zenMode.fullScreen": false,
   "zenMode.hideLineNumbers": false,
   "zenMode.hideTabs": false,
+  "zenMode.hideActivityBar": false,
   "editor.minimap.enabled": false,
   "workbench.settings.openDefaultSettings": true,
   "workbench.settings.useSplitJSON": true,
@@ -33,5 +37,5 @@
   "files.exclude": {
     "**/.git": false
   },
-  "files.autoSaveDelay": 5000
+  "files.autoSaveDelay": 4000
 }

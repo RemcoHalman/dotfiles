@@ -29,4 +29,12 @@ alias update_system='sudo softwareupdate -i -a'
 # Deleting aliases
 alias rmDS='find . -name *.DS_Store -type f -exec rm {} \;'
 alias rmPYC='find . | grep -E "(__pycache__|\.pyc|\.pyo$)" | xargs rm -rf'
-alias clean='rm -rf ~/.Trash/*; rm -rf ~/Downloads/*'
+alias rmSCREEN='cd ~/Desktop; find . -name Screenshot* -type f -exec rm {} \;'
+alias clean='rm -rf ~/.Trash/*; rm -rf ~/Downloads/*; echo "Trash and Downloads cleaned"'
+
+# Run Django commands
+alias djproj='django-admin startproject '
+alias djapp='./manage.py startapp '
+alias djrun='./manage.py runserver'
+alias djmakemig='./manage.py makemigrations'
+alias djmigrate='./manage.py migrate'

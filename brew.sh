@@ -29,12 +29,18 @@ brew cask install appcleaner
 brew cask install caffeine
 brew cask install flux
 brew cask install day-o
-
 brew cask install daisydisk
+brew install speedtest-cli # Commandline Speedtest
+brew install unrar # Unpack all .zip rar files
+
+# Youtube downloader and dependancie
+brew install ffmpeg
+brew install youtube-dl
 
 # Code Editors
 brew cask install visual-studio-code
 brew cask install sublime-text
+brew cask install arduino # For Escaperoom Projects
 # Microsoft office
 brew cask install microsoft-office
 
