@@ -1,0 +1,13 @@
+donjayamanne.githistory
+eamodio.gitlens
+esbenp.prettier-vscode
+formulahendry.code-runner
+GrapeCity.gc-excelviewer
+ms-python.python
+ms-vscode.cpptools
+ms-vscode.Theme-PredawnKit
+shd101wyy.markdown-preview-enhanced
+teabyii.ayu
+vsciot-vscode.vscode-arduino
+vscode-icons-team.vscode-icons
+Zignd.html-css-class-completion
