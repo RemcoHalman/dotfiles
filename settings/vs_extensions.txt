@@ -1,4 +1,6 @@
+darkriszty.markdown-table-prettify
 donjayamanne.githistory
+DougFinke.vscode-pandoc
 eamodio.gitlens
 esbenp.prettier-vscode
 formulahendry.code-runner
@@ -10,4 +12,5 @@ shd101wyy.markdown-preview-enhanced
 teabyii.ayu
 vsciot-vscode.vscode-arduino
 vscode-icons-team.vscode-icons
+zhoufeng.pyqt-integration
 Zignd.html-css-class-completion

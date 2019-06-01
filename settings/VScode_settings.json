@@ -12,7 +12,7 @@
   "editor.tokenColorCustomizations": {
     "comments": "#60ff7d"
   },
-  "window.zoomLevel": 1,
+  "window.zoomLevel": 0,
   "python.pythonPath": "/usr/local/bin/python3",
   "code-runner.executorMap": {
     "python": "$pythonPath -u $fullFileName"
@@ -24,10 +24,10 @@
   },
   "editor.quickSuggestionsDelay": 100,
   "zenMode.centerLayout": false,
-  "zenMode.fullScreen": false,
+  "zenMode.fullScreen": true,
   "zenMode.hideLineNumbers": false,
   "zenMode.hideTabs": false,
-  "zenMode.hideActivityBar": false,
+  "zenMode.hideActivityBar": true,
   "editor.minimap.enabled": false,
   "workbench.settings.openDefaultSettings": true,
   "workbench.settings.useSplitJSON": true,
@@ -37,5 +37,9 @@
   "files.exclude": {
     "**/.git": false
   },
-  "files.autoSaveDelay": 4000
+  "files.autoSaveDelay": 4000,
+  "pandoc.docxOptString": "",
+  "pandoc.htmlOptString": "-s -t html5",
+  "pandoc.pdfOptString": "",
+  "terminal.integrated.rendererType": "dom"
 }

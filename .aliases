@@ -26,10 +26,14 @@ alias sudo='sudo '
 # Get OS X Software Updates, and update installed Ruby gems, Homebrew, npm, and their installed packages
 alias update_system='sudo softwareupdate -i -a'
 
+# Show/hide hidden files in Finder
+alias show="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
+alias hide="defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder"
+
 # Deleting aliases
 alias rmDS='find . -name *.DS_Store -type f -exec rm {} \;'
 alias rmPYC='find . | grep -E "(__pycache__|\.pyc|\.pyo$)" | xargs rm -rf'
-alias rmSCREEN='cd ~/Desktop; find . -name Screenshot* -type f -exec rm {} \;'
+alias rmSCREEN='cd ~/Desktop; find . -name "Screenshot*" -type f -exec rm "{}" \;'
 alias clean='rm -rf ~/.Trash/*; rm -rf ~/Downloads/*; echo "Trash and Downloads cleaned"'
 
 # Run Django commands
@@ -38,3 +42,9 @@ alias djapp='./manage.py startapp '
 alias djrun='./manage.py runserver'
 alias djmakemig='./manage.py makemigrations'
 alias djmigrate='./manage.py migrate'
+
+# Default Settings
+alias python='python3.7'
+alias venv='python3 -m venv venv'
+alias pip='pip3'
+alias http='python -m http.server'

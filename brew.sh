@@ -32,15 +32,18 @@ brew cask install day-o
 brew cask install daisydisk
 brew install speedtest-cli # Commandline Speedtest
 brew install unrar # Unpack all .zip rar files
+brew install pandoc # Pandoc install for vscode 
+brew cask install basictex # Pandoc util to generate pdf
 
 # Youtube downloader and dependancie
 brew install ffmpeg
 brew install youtube-dl
 
-# Code Editors
+# Code Editors + ftp manager
 brew cask install visual-studio-code
 brew cask install sublime-text
 brew cask install arduino # For Escaperoom Projects
+brew cask install cyberduck
 # Microsoft office
 brew cask install microsoft-office
 

@@ -13,7 +13,7 @@ fi
 
 homedir=$1
 
-directorys="csv logs Sites Work"
+directorys="csv logs Sites Work "
 for directory in ${directorys}; do
     echo "Creating $directory in home directory."
     mkdir ${homedir}/${directory}
@@ -23,9 +23,9 @@ done
 dotfiledir=${homedir}/dotfiles
 
 # list of files/folders to symlink in ${homedir}
-files="bash_profile bashrc bash_prompt aliases private environments_vars"
+files="bash_profile bashrc bash_prompt aliases private environments_vars custom_commands.sh"
 
-# change to the dotfiles directory
+# change to the dotfiles directory and adding custom commands folder
 echo "Changing to the ${dotfiledir} directory"
 cd ${dotfiledir}
 echo "...done"
