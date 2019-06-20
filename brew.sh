@@ -1,10 +1,13 @@
 #!/usr/bin/env bash
 
-# Check that Homebrew is installed and install if not
-if test ! $(which brew)
-then
-  echo "  Installing Homebrew for you."
-  ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" > /tmp/homebrew-install.log
+# Checks that Homebrew is installed and install if not
+which brew 1>&/dev/null
+if [ ! "$?" -eq 0 ] ; then
+	echo "Homebrew not installed. Attempting to install Homebrew"
+	/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+	if [ ! "$?" -eq 0 ] ; then
+		echo "Something went wrong. Exiting..." && exit 1
+	fi
 fi
 
 ### Install Brew Packages
@@ -17,7 +20,6 @@ brew cask install google-chrome
 brew cask install firefox
 # Extra
 brew cask install virtualbox
-brew cask install sourcetree
 brew cask install spotify
 brew cask install skype
 brew cask install gimp

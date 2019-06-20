@@ -5,11 +5,16 @@ eamodio.gitlens
 esbenp.prettier-vscode
 formulahendry.code-runner
 GrapeCity.gc-excelviewer
+Gruntfuggly.todo-tree
 ms-python.python
 ms-vscode.cpptools
+ms-vscode.csharp
 ms-vscode.Theme-PredawnKit
+platformio.platformio-ide
 shd101wyy.markdown-preview-enhanced
+shyykoserhiy.vscode-spotify
 teabyii.ayu
+tomoki1207.pdf
 vsciot-vscode.vscode-arduino
 vscode-icons-team.vscode-icons
 zhoufeng.pyqt-integration

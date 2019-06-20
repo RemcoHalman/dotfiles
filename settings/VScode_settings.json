@@ -1,6 +1,10 @@
 {
   "workbench.colorTheme": "Predawn",
   "workbench.iconTheme": "ayu",
+  "workbench.colorCustomizations": {
+    "editor.selectionBackground": "#135564",
+    "editor.selectionHighlightBackground": "#135564"
+  },
   "editor.fontSize": 15,
   "editor.fontWeight": "500",
   "editor.fontFamily": "Source Code Pro",
@@ -41,5 +45,15 @@
   "pandoc.docxOptString": "",
   "pandoc.htmlOptString": "-s -t html5",
   "pandoc.pdfOptString": "",
-  "terminal.integrated.rendererType": "dom"
+  "terminal.integrated.rendererType": "dom",
+  "pyqt-integration.qtdesigner.path": "/Applications/Qt Designer.app",
+  "[markdown]": {
+    "editor.defaultFormatter": "darkriszty.markdown-table-prettify"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "explorer.confirmDragAndDrop": false,
+  "workbench.activityBar.visible": true,
+  "workbench.statusBar.visible": true
 }

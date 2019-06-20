@@ -23,12 +23,17 @@ done
 dotfiledir=${homedir}/dotfiles
 
 # list of files/folders to symlink in ${homedir}
-files="bash_profile bashrc bash_prompt aliases private environments_vars custom_commands.sh"
+files="bash_profile bashrc bash_prompt aliases private environments_vars custom_commands.sh macos"
 
 # change to the dotfiles directory and adding custom commands folder
 echo "Changing to the ${dotfiledir} directory"
 cd ${dotfiledir}
 echo "...done"
+
+# Create empty Private files so the symlink wont Fail
+touch .private
+touch .environments_vars
+
 
 # create symlinks (will overwrite old dotfiles)
 for file in ${files}; do
@@ -38,6 +43,9 @@ done
 
 # Download Git Auto-Completion
 curl "https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash" > ${homedir}/.git-completion.bash
+
+# Run MacOS preference installation
+./.macos
 
 # Run the Homebrew Script For a full os setup
 # ./brew.sh

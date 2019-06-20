@@ -30,10 +30,10 @@ alias update_system='sudo softwareupdate -i -a'
 alias show="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
 alias hide="defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder"
 
-# Deleting aliases
+# Deleting 
 alias rmDS='find . -name *.DS_Store -type f -exec rm {} \;'
 alias rmPYC='find . | grep -E "(__pycache__|\.pyc|\.pyo$)" | xargs rm -rf'
-alias rmSCREEN='cd ~/Desktop; find . -name "Screenshot*" -type f -exec rm "{}" \;'
+alias rmSCREEN='cd ~/Desktop/Screenshot; find . -name "Screenshot*" -type f -exec rm "{}" \;'
 alias clean='rm -rf ~/.Trash/*; rm -rf ~/Downloads/*; echo "Trash and Downloads cleaned"'
 
 # Run Django commands
@@ -43,8 +43,16 @@ alias djrun='./manage.py runserver'
 alias djmakemig='./manage.py makemigrations'
 alias djmigrate='./manage.py migrate'
 
+### Download youtube
+alias yt='youtube-dl -f best '
+alias yta='youtube-dl -x --audio-format mp3 --audio-quality 0 '
+alias ytflac='youtube-dl -x --audio-format flac --audio-quality 0 '
+
 # Default Settings
 alias python='python3.7'
 alias venv='python3 -m venv venv'
 alias pip='pip3'
 alias http='python -m http.server'
+
+# Lock the screen (when going AFK)
+alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
