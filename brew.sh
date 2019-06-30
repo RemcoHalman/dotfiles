@@ -55,6 +55,3 @@ brew cask install font-source-code-pro
 
 # Remove brew cruft
 brew cleanup
-
-# Remove cask cruft
-brew cask cleanup

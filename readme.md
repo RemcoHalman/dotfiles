@@ -1,7 +1,8 @@
 #### Dotfiles to use in setting a new OSX machine.
 
-.private and enviroments_vars are not included.
+.private and enviroments_vars are included but are empty when created.
 
-Remove them from the `install.sh` list or create your own
+in `install.sh` uncomment the correct brew install file which you want to use
 
-in `install.sh` uncomment the correct brew install file
+usage of the installation file 
+```./install.sh <home_directory>```

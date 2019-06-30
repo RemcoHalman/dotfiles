@@ -1,6 +1,6 @@
 {
   "workbench.colorTheme": "Predawn",
-  "workbench.iconTheme": "ayu",
+  "workbench.iconTheme": "material-icon-theme",
   "workbench.colorCustomizations": {
     "editor.selectionBackground": "#135564",
     "editor.selectionHighlightBackground": "#135564"
@@ -19,7 +19,8 @@
   "window.zoomLevel": 0,
   "python.pythonPath": "/usr/local/bin/python3",
   "code-runner.executorMap": {
-    "python": "$pythonPath -u $fullFileName"
+    "python": "$pythonPath -u $fullFileName",
+    "html": "open -a \"Google Chrome\""
   },
   "code-runner.clearPreviousOutput": true,
   "code-runner.showExecutionMessage": false,
@@ -46,7 +47,8 @@
   "pandoc.htmlOptString": "-s -t html5",
   "pandoc.pdfOptString": "",
   "terminal.integrated.rendererType": "dom",
-  "pyqt-integration.qtdesigner.path": "/Applications/Qt Designer.app",
+  "pyqt-integration.qtdesigner.path": "Qt Designer.app",
+  "pyqt-integration.pyuic.compile.filepath": "Integrated_Ui_${ui_name}.py",
   "[markdown]": {
     "editor.defaultFormatter": "darkriszty.markdown-table-prettify"
   },

@@ -3,7 +3,6 @@
 # This script creates symlinks from the home directory to any desired dotfiles in ${homedir}/dotfiles
 # And sets a few working folders
 # And also installs Homebrew Packages
-# And sets Sublime preferences
 ############################
 
 if [ "$#" -ne 1 ]; then
@@ -13,11 +12,35 @@ fi
 
 homedir=$1
 
-directorys="csv logs Sites Work "
+#### Creating personal folder structure
+# On Desktop
+cd ${homedir}/Desktop
+mkdir Screenshots_test
+
+# In home folder
+directorys="csv_test logs_test Sites_test Work_test"
 for directory in ${directorys}; do
     echo "Creating $directory in home directory."
     mkdir ${homedir}/${directory}
 done
+
+sitesdir=${homedir}/Sites_test
+sitesFolders="development production sdk"
+for siteFolder in ${sitesFolders}; do
+    echo "Creating working folder $siteFolder in Sites directory."
+    mkdir ${sitesdir}/${siteFolder}
+done
+
+echo "Sites working folders created"
+
+workFolders="Python Django Flask PyQt Flutter Arduino C# Wordpress Website"
+for workFolder in ${workFolders}; do
+    echo "Creating working folder $workFolder in Development and Production directory."
+    mkdir ${sitesdir}/development/${workFolder}_dev
+    mkdir ${sitesdir}/production/${workFolder}_production
+done
+
+echo "Development and Production folders created"
 
 # dotfiles directory
 dotfiledir=${homedir}/dotfiles

@@ -4,7 +4,7 @@
 function createPy() {
     cd
     python3 /Users/Remco/dotfiles/custom_commands_scripts/new_project_py.py $1
-    cd /Users/Remco/Sites/dev/PythonProjects/$1
+    cd /Users/Remco/Sites/dev/Python_projects/$1
     python3 -m venv venv
     . venv/bin/activate
     git init
@@ -20,7 +20,7 @@ function createPy() {
 function createQt() {
     cd
     python3 /Users/Remco/dotfiles/custom_commands_scripts/new_project_qt.py $1
-    cd /Users/Remco/Sites/dev/PyQTApps/$1
+    cd /Users/Remco/Sites/dev/PyQT_projects/$1
     python3 -m venv venv
     . venv/bin/activate
     git init
@@ -39,4 +39,19 @@ function createQt() {
 # small enough for one screen.
 function tre() {
 	tree -aC -I '.git|node_modules|bower_components' --dirsfirst "$@" | less -FRNX;
+}
+
+# Finding app full path to use for CLI
+function findApp() {
+    NAME_APP=$1
+    PATH_LAUNCHSERVICES="/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/LaunchServices.framework/Versions/A/Support/lsregister"
+    ${PATH_LAUNCHSERVICES} -dump | grep -o "/.*${NAME_APP}.app" | grep -v -E "Caches|TimeMachine|Temporary|/Volumes/${NAME_APP}" | uniq
+}
+
+function addFlutter() {
+    cd
+    flutter create ~/Sites/dev/flutter_projects/$1
+    cd ~/Sites/dev/flutter_projects/$1
+    code .
+    open -a '/Applications/Xcode.app/Contents/Developer/Applications/Simulator.app'
 }
