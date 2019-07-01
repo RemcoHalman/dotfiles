@@ -1,0 +1,13 @@
+{
+  "Table Markdown": {
+    "prefix": "tableMD",
+    "body": [
+      "|   |   |   |   |   |",
+      "|---|---|---|---|---|",
+      "|   |   |   |   |   |",
+      "|   |   |   |   |   |",
+      "|   |   |   |   |   |"
+    ],
+    "description": "Table Markdown"
+  }
+}

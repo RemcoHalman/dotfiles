@@ -57,5 +57,7 @@
   },
   "explorer.confirmDragAndDrop": false,
   "workbench.activityBar.visible": true,
-  "workbench.statusBar.visible": true
+  "workbench.statusBar.visible": true,
+  "vsicons.dontShowNewVersionMessage": true,
+  "C_Cpp.updateChannel": "Insiders"
 }

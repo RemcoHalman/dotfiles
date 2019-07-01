@@ -1,0 +1,14 @@
+{
+  "Add current working Directory": {
+    "prefix": "acwd",
+    "body": [
+      "import os",
+      "",
+      "# Working directory",
+      "cwd = os.path.dirname(os.path.abspath(__file__))",
+      "# .txt file to use with open()",
+      "file = os.path.join(cwd, 'file_.txt')"
+    ],
+    "description": "Add current working Directory"
+  }
+}

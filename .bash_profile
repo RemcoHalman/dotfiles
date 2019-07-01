@@ -20,3 +20,6 @@ fi
 
 # Setting PATH for Flutter SDK
 export PATH="$PATH:/Users/Remco/Sites/flutter/bin"
+
+# Setting PATH for Visual Studio Code (CLI usage)
+export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"

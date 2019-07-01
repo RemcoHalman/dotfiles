@@ -75,3 +75,6 @@ curl "https://raw.githubusercontent.com/git/git/master/contrib/completion/git-co
 
 # Run the Homebrew Script For a partial os setup
 # ./partial_brew.sh 
+
+# Setting up Visual Studio code + preferences
+./install_vsc_settings.sh
