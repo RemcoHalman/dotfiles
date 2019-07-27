@@ -18,14 +18,14 @@ cd ${homedir}/Desktop
 mkdir Screenshots_test
 
 # In home folder
-directorys="csv_test logs_test Sites_test Work_test"
+directorys="csv logs Sites Work"
 for directory in ${directorys}; do
     echo "Creating $directory in home directory."
     mkdir ${homedir}/${directory}
 done
 
-sitesdir=${homedir}/Sites_test
-sitesFolders="development production sdk"
+sitesdir=${homedir}/Sites
+sitesFolders="dev production sdk"
 for siteFolder in ${sitesFolders}; do
     echo "Creating working folder $siteFolder in Sites directory."
     mkdir ${sitesdir}/${siteFolder}
@@ -33,20 +33,19 @@ done
 
 echo "Sites working folders created"
 
-workFolders="Python Django Flask PyQt Flutter Arduino C# Wordpress Website"
+workFolders="Python Django Flask PyQt Flutter Arduino C# Wordpress Website Misc"
 for workFolder in ${workFolders}; do
-    echo "Creating working folder $workFolder in Development and Production directory."
-    mkdir ${sitesdir}/development/${workFolder}_dev
-    mkdir ${sitesdir}/production/${workFolder}_production
+    echo "Creating working folder $workFolder in dev directory."
+    mkdir ${sitesdir}/dev/${workFolder}_projects
 done
 
-echo "Development and Production folders created"
+echo "dev folders created"
 
 # dotfiles directory
 dotfiledir=${homedir}/dotfiles
 
 # list of files/folders to symlink in ${homedir}
-files="bash_profile bashrc bash_prompt aliases private environments_vars custom_commands.sh macos"
+files="bash_profile bashrc bash_prompt aliases private environments_vars functions.sh macos"
 
 # change to the dotfiles directory and adding custom commands folder
 echo "Changing to the ${dotfiledir} directory"

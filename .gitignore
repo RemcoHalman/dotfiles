@@ -57,4 +57,4 @@ venv.bak/
 .private
 .environments_vars
 .private_macos
-install_test.sh
+*_test*

@@ -10,8 +10,8 @@ if [ -f ~/.git-completion.bash ]; then
 fi
 
 # Load custom commands if available
-if [ -f ~/.custom_commands.sh ]; then
-    source ~/.custom_commands.sh
+if [ -f ~/.functions.sh ]; then
+    source ~/.functions.sh
 fi
 
 # Setting PATH for Python 3.7

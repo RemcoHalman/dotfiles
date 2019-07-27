@@ -3,7 +3,7 @@
 # New project folder Python
 function createPy() {
     cd
-    python3 /Users/Remco/dotfiles/custom_commands_scripts/new_project_py.py $1
+    python3 /Users/Remco/dotfiles/function_scripts/new_project_py.py $1
     cd /Users/Remco/Sites/dev/Python_projects/$1
     python3 -m venv venv
     . venv/bin/activate
@@ -19,7 +19,7 @@ function createPy() {
 # New project folder sets venv and installs > FBS, PyQt5
 function createQt() {
     cd
-    python3 /Users/Remco/dotfiles/custom_commands_scripts/new_project_qt.py $1
+    python3 /Users/Remco/dotfiles/function_scripts/new_project_qt.py $1
     cd /Users/Remco/Sites/dev/PyQT_projects/$1
     python3 -m venv venv
     . venv/bin/activate
@@ -54,4 +54,5 @@ function addFlutter() {
     cd ~/Sites/dev/flutter_projects/$1
     code .
     open -a '/Applications/Xcode.app/Contents/Developer/Applications/Simulator.app'
+    exit
 }

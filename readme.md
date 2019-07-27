@@ -10,6 +10,5 @@ usage of the installation file
 ***
 ## After Full installation
 Make sure TODO (do this in correct order):
-* 2 `Visual Studio Code` Plugins are installed from `settings/vs_extensions.txt` (./vsc_extensions_install.sh)
-* `Visual Studio Code` preference are set from `settings/VScode_settings.json` (copy and paste)
+* Visual Studio Code Settings and Plugins are installed from `/settings/` If there was a error when installing do `./install_vsc_settings.sh`
 * Flutter SDK is installed (```https://flutter.dev/docs/get-started/install/macos```)
