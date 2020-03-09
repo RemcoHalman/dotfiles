@@ -58,3 +58,4 @@ venv.bak/
 .environments_vars
 .private_macos
 *_test*
+.startup_scripts.sh

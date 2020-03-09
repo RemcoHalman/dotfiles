@@ -33,7 +33,7 @@ alias hide="defaults write com.apple.finder AppleShowAllFiles -bool false && kil
 # Deleting 
 alias rmDS='find . -name *.DS_Store -type f -exec rm {} \;'
 alias rmPYC='find . | grep -E "(__pycache__|\.pyc|\.pyo$)" | xargs rm -rf'
-alias rmSCREEN='cd ~/Desktop/Screenshot; find . -name "Screenshot*" -type f -exec rm "{}" \;'
+alias rmSCREEN='cd ~/Desktop/Screenshots; find . -name "Screenshot*" -type f -exec rm "{}" \;'
 alias clean='rm -rf ~/.Trash/*; rm -rf ~/Downloads/*; echo "Trash and Downloads cleaned"'
 
 # Run Django commands
@@ -56,3 +56,16 @@ alias http='python -m http.server'
 
 # Lock the screen (when going AFK)
 alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
+
+# Navigating in the terminal
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+
+# Hide/Unhide Specific files
+alias hideFile="sudo chflags hidden "
+alias unHideFile="sudo chflags nohidden "
+
+# creating virtualenv
+alias venv6="virtualenv -p python3.6 "
+alias venv7="virtualenv -p python3.7 "

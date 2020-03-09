@@ -1,11 +1,14 @@
 {
-  "workbench.colorTheme": "Predawn",
   "workbench.iconTheme": "material-icon-theme",
+  "material-icon-theme.folders.associations": {
+    "ui": "layout",
+    "global_state": "global"
+  },
   "workbench.colorCustomizations": {
     "editor.selectionBackground": "#135564",
     "editor.selectionHighlightBackground": "#135564"
   },
-  "editor.fontSize": 15,
+  "editor.fontSize": 16,
   "editor.fontWeight": "500",
   "editor.fontFamily": "Source Code Pro",
   "debug.console.fontFamily": "Source Code Pro",
@@ -20,7 +23,7 @@
   "python.pythonPath": "/usr/local/bin/python3",
   "code-runner.executorMap": {
     "python": "$pythonPath -u $fullFileName",
-    "html": "open -a \"Google Chrome\""
+    "html": "open -b com.google.Chrome"
   },
   "code-runner.clearPreviousOutput": true,
   "code-runner.showExecutionMessage": false,
@@ -37,9 +40,9 @@
   "workbench.settings.openDefaultSettings": true,
   "workbench.settings.useSplitJSON": true,
   "workbench.settings.editor": "json",
-  "workbench.statusBar.feedback.visible": false,
   "files.autoSave": "afterDelay",
   "files.exclude": {
+    "**/.DS_Store": false,
     "**/.git": false
   },
   "files.autoSaveDelay": 4000,
@@ -47,8 +50,7 @@
   "pandoc.htmlOptString": "-s -t html5",
   "pandoc.pdfOptString": "",
   "terminal.integrated.rendererType": "dom",
-  "pyqt-integration.qtdesigner.path": "Qt Designer.app",
-  "pyqt-integration.pyuic.compile.filepath": "Integrated_Ui_${ui_name}.py",
+  "python.jediEnabled": true,
   "[markdown]": {
     "editor.defaultFormatter": "darkriszty.markdown-table-prettify"
   },
@@ -58,6 +60,37 @@
   "explorer.confirmDragAndDrop": false,
   "workbench.activityBar.visible": true,
   "workbench.statusBar.visible": true,
-  "vsicons.dontShowNewVersionMessage": true,
-  "C_Cpp.updateChannel": "Insiders"
+  "C_Cpp.updateChannel": "Insiders",
+  "dart.previewFlutterUiGuides": true,
+  "dart.previewFlutterUiGuidesCustomTracking": true,
+  "todo-tree.general.tags": ["TODO", "FIXME", "FUTURE"],
+  "beautify.language": {
+    "html": ["htm", "html", "django-html"]
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "liveServer.settings.port": 6750,
+  "[json]": {
+    "editor.defaultFormatter": "HookyQR.beautify"
+  },
+  "bracketPairColorizer.consecutivePairColors": [
+    "<>",
+    "()",
+    "[]",
+    "{}",
+    ["Green", "Orchid", "Yellow"],
+    "Red"
+  ],
+  "[cpp]": {
+    "editor.defaultFormatter": "ms-vscode.cpptools"
+  },
+  "workbench.colorTheme": "Monokai",
+  "cSpell.language": "en,nl",
+  "cSpell.userWords": ["CRGB", "MQTT", "nbsp", "println"],
+  "[scss]": {
+    "editor.defaultFormatter": "HookyQR.beautify"
+  },
+  "editor.renderWhitespace": "all",
+  "todo-tree.tree.showScanModeButton": false
 }

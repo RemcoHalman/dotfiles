@@ -15,11 +15,17 @@ if [ -f ~/.functions.sh ]; then
 fi
 
 # Setting PATH for Python 3.7
-# PATH="/Library/Frameworks/Python.framework/Versions/3.7/bin:${PATH}"
-# export PATH
+export PATH="/Library/Frameworks/Python.framework/Versions/3.7/bin:${PATH}"
+
+# Setting PATH for Python 3.6
+# The original version is saved in .bash_profile.pysave
+export PATH="/Library/Frameworks/Python.framework/Versions/3.6/bin:${PATH}"
 
 # Setting PATH for Flutter SDK
 export PATH="$PATH:/Users/Remco/Sites/flutter/bin"
 
 # Setting PATH for Visual Studio Code (CLI usage)
 export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+
+# Setting PATH for ruby
+export PATH="/usr/local/opt/ruby/bin:$PATH"

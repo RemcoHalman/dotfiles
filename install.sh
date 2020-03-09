@@ -18,22 +18,22 @@ cd ${homedir}/Desktop
 mkdir Screenshots_test
 
 # In home folder
-directorys="csv logs Sites Work"
+directorys="csv logs Code Work"
 for directory in ${directorys}; do
     echo "Creating $directory in home directory."
     mkdir ${homedir}/${directory}
 done
 
-sitesdir=${homedir}/Sites
-sitesFolders="dev production sdk"
-for siteFolder in ${sitesFolders}; do
-    echo "Creating working folder $siteFolder in Sites directory."
-    mkdir ${sitesdir}/${siteFolder}
+codedir=${homedir}/Code
+codeFolders="dev production sdk"
+for codeFolder in ${codeFolders}; do
+    echo "Creating working folder $siteFolder in Code directory."
+    mkdir ${Codedir}/${codeFolder}
 done
 
-echo "Sites working folders created"
+echo "Code working folders created"
 
-workFolders="Python Django Flask PyQt Flutter Arduino C# Wordpress Website Misc"
+workFolders="Python Django Flask PyQt Flutter Arduino C# cpp Wordpress Website Misc Personal"
 for workFolder in ${workFolders}; do
     echo "Creating working folder $workFolder in dev directory."
     mkdir ${sitesdir}/dev/${workFolder}_projects
@@ -70,10 +70,7 @@ curl "https://raw.githubusercontent.com/git/git/master/contrib/completion/git-co
 ./.macos
 
 # Run the Homebrew Script For a full os setup
-# ./brew.sh
-
-# Run the Homebrew Script For a partial os setup
-# ./partial_brew.sh 
+./brew.sh
 
 # Setting up Visual Studio code + preferences
 ./install_vsc_settings.sh

@@ -12,19 +12,18 @@ fi
 
 ### Install Brew Packages
 brew install python
+brew install ruby
 brew install tree
+brew install git
 
 ### Install MacOS Applications
 # Browsers
 brew cask install google-chrome
 brew cask install firefox
 # Extra
-brew cask install virtualbox
 brew cask install spotify
 brew cask install skype
-brew cask install gimp
 brew cask install vlc
-brew cask install mvp
 brew cask install teamviewer
 # Misc
 brew cask install appcleaner
@@ -32,22 +31,21 @@ brew cask install caffeine
 brew cask install flux
 brew cask install day-o
 brew cask install daisydisk
-brew install speedtest-cli # Commandline Speedtest
-brew install unrar # Unpack all .zip rar files
-brew install pandoc # Pandoc install for vscode 
-brew cask install basictex # Pandoc util to generate pdf
+brew cask install slack
+brew cask install discord
 
 # Youtube downloader and dependancie
 brew install ffmpeg
 brew install youtube-dl
+brew install imagemagick
 
 # Code Editors + ftp manager
 brew cask install visual-studio-code
-brew cask install sublime-text
-brew cask install arduino # For Escaperoom Projects
 brew cask install cyberduck
-# Microsoft office
-brew cask install microsoft-office
+## Code editor extras
+brew install unrar # Unpack all .zip rar files
+brew install pandoc # Pandoc install for vscode 
+brew cask install basictex # Pandoc util to generate pdf
 
 ### Install Source Code Pro Font
 brew tap homebrew/cask-fonts

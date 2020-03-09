@@ -8,10 +8,7 @@ function createPy() {
     python3 -m venv venv
     . venv/bin/activate
     git init
-    touch .gitignore
-    touch README.md
-    touch TODO.md
-    touch main.py
+    touch .gitignore README.md TODO.md main.py
     code .
     echo 'New python Project has been created' $1
 }
@@ -21,13 +18,11 @@ function createQt() {
     cd
     python3 /Users/Remco/dotfiles/function_scripts/new_project_qt.py $1
     cd /Users/Remco/Sites/dev/PyQT_projects/$1
-    python3 -m venv venv
+    virtualenv -p python3.6 venv
     . venv/bin/activate
     git init
-    touch .gitignore
-    touch README.md
-    touch TODO.md
-    pip install fbs PyQt5 
+    touch .gitignore README.md=
+    pip install fbs PyQt5==5.9.2
     fbs startproject
     code .
     echo 'New fbs(gui) Project has been created' $1
@@ -55,4 +50,45 @@ function addFlutter() {
     code .
     open -a '/Applications/Xcode.app/Contents/Developer/Applications/Simulator.app'
     exit
+}
+
+function addPersonal() {
+    if [ -z "$1" ]; then
+        echo -e "\nNo name specified, Try Again \nUsage: addPersonal <NameOfFolder> <Optional: repo>"
+    else
+        cd && cd ~/Sites/dev/Personal_projects
+        mkdir $1 $1/src && cd $1
+        python3 -m venv venv
+        . venv/bin/activate
+        cd $1
+        git init .
+        touch .gitignore README.md TODO.md
+        code .
+    fi
+
+    if [ -z "$2"]; then
+        echo "No repo has been made."
+    else
+        echo "repo, setup not done"
+    fi
+}
+
+function addNotePrivate() {
+    cd && cd ~/Sites/Notes/private && touch "$1.md"
+    code .
+    }
+
+function addNoteWork() {
+    cd && cd ~/Sites/Notes/work && touch "$1.md"
+    code .
+    }
+
+function md-docx() {
+    if [ "$#" -ne 1 ]; then
+    echo "Usage: File to open without extension"
+    exit 1
+    fi 
+    basename="$1"
+    filename="${basename%.*}"
+    pandoc -s $filename.md -o $filename.docx
 }
