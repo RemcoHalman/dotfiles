@@ -1,5 +1,6 @@
+source ~/.profile
 # Load dotfiles:
-for file in ~/.{bash_prompt,aliases,private,environments_vars}; do
+for file in ~/.{aliases,private,environments_vars,profile}; do
     [ -r "$file" ] && [ -f "$file" ] && source "$file";
 done;
 unset file;

@@ -45,7 +45,7 @@ echo "dev folders created"
 dotfiledir=${homedir}/dotfiles
 
 # list of files/folders to symlink in ${homedir}
-files="bash_profile bashrc bash_prompt aliases private environments_vars functions.sh macos"
+files="bash_profile bashrc profile aliases private environments_vars functions.sh macos"
 
 # change to the dotfiles directory and adding custom commands folder
 echo "Changing to the ${dotfiledir} directory"
@@ -53,6 +53,7 @@ cd ${dotfiledir}
 echo "...done"
 
 # Create empty Private files so the symlink wont Fail
+touch .profile
 touch .private
 touch .environments_vars
 
