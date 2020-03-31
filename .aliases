@@ -69,3 +69,6 @@ alias unHideFile="sudo chflags nohidden "
 # creating virtualenv
 alias venv6="virtualenv -p python3.6 "
 alias venv7="virtualenv -p python3.7 "
+
+# Github CLI 
+alias onlinerepo="gh repo view"

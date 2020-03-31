@@ -24,7 +24,6 @@ brew cask install firefox
 brew cask install spotify
 brew cask install skype
 brew cask install vlc
-brew cask install teamviewer
 # Misc
 brew cask install appcleaner
 brew cask install caffeine
@@ -33,6 +32,7 @@ brew cask install day-o
 brew cask install daisydisk
 brew cask install slack
 brew cask install discord
+brew install github/gh/gh
 
 # Youtube downloader and dependancie
 brew install ffmpeg
@@ -42,10 +42,12 @@ brew install imagemagick
 # Code Editors + ftp manager
 brew cask install visual-studio-code
 brew cask install cyberduck
-## Code editor extras
-brew install unrar # Unpack all .zip rar files
-brew install pandoc # Pandoc install for vscode 
-brew cask install basictex # Pandoc util to generate pdf
+
+# Code editor extras
+brew install unrar
+brew install pandoc
+brew cask install basictex 
+brew cask install chromedriver
 
 ### Install Source Code Pro Font
 brew tap homebrew/cask-fonts
