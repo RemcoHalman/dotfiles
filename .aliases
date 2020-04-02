@@ -54,9 +54,6 @@ alias venv='python3 -m venv venv'
 alias pip='pip3'
 alias http='python -m http.server'
 
-# Lock the screen (when going AFK)
-alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
-
 # Navigating in the terminal
 alias ..="cd .."
 alias ...="cd ../.."
@@ -65,10 +62,6 @@ alias ....="cd ../../.."
 # Hide/Unhide Specific files
 alias hideFile="sudo chflags hidden "
 alias unHideFile="sudo chflags nohidden "
-
-# creating virtualenv
-alias venv6="virtualenv -p python3.6 "
-alias venv7="virtualenv -p python3.7 "
 
 # Github CLI 
 alias onlinerepo="gh repo view"

@@ -12,29 +12,22 @@ fi
 
 ### Install Brew Packages
 brew install python
-brew install ruby
 brew install tree
 brew install git
 
 ### Install MacOS Applications
-# Browsers
 brew cask install google-chrome
-brew cask install firefox
-# Extra
 brew cask install spotify
 brew cask install skype
 brew cask install vlc
 # Misc
 brew cask install appcleaner
-brew cask install caffeine
 brew cask install flux
 brew cask install day-o
 brew cask install daisydisk
-brew cask install slack
-brew cask install discord
 brew install github/gh/gh
 
-# Youtube downloader and dependancie
+# Youtube downloader and dependancies
 brew install ffmpeg
 brew install youtube-dl
 brew install imagemagick

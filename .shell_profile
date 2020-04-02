@@ -1,0 +1,26 @@
+ORANGE="172"
+LIGHTBLUE="51"
+CYAN="43"
+OLIVE="3"
+GRAY="245"
+
+PS1=""
+PS1+="%B"                           # Bold
+PS1+="%{%F{$ORANGE}%}%n%{%f%}"      # Username
+PS1+="%b"                           # stop Bold
+PS1+=" at "                         # @ 
+PS1+="%B" # Bold                    # Bold
+PS1+="%{%F{$CYAN}%}%m %b%{%f%}%"    # Hostname
+PS1+=" in "                         # - 
+PS1+="%{%F{$OLIVE}%}%1~ %{%f%}% ~ " # Current working folder
+
+autoload -Uz vcs_info
+precmd_vcs_info() { vcs_info }
+precmd_functions+=( precmd_vcs_info )
+setopt prompt_subst
+PS1+="\$vcs_info_msg_0_"
+zstyle ':vcs_info:git:*' formats '%F{$GRAY}(%b)%r%f'
+zstyle ':vcs_info:*' enable git
+
+PS1+="
+> "                                 # Creating newline
