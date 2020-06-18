@@ -12,13 +12,13 @@ PS1+=" at "                         # @
 PS1+="%B" # Bold                    # Bold
 PS1+="%{%F{$CYAN}%}%m %b%{%f%}%"    # Hostname
 PS1+=" in "                         # - 
-PS1+="%{%F{$OLIVE}%}%1~ %{%f%}% ~ " # Current working folder
+PS1+="%{%F{$OLIVE}%}%1~ %{%f%}%"    # Current working folder
 
 autoload -Uz vcs_info
 precmd_vcs_info() { vcs_info }
 precmd_functions+=( precmd_vcs_info )
 setopt prompt_subst
-PS1+="\$vcs_info_msg_0_"
+PS1+=" : \$vcs_info_msg_0_"
 zstyle ':vcs_info:git:*' formats '%F{$GRAY}(%b)%r%f'
 zstyle ':vcs_info:*' enable git
 

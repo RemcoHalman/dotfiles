@@ -14,6 +14,7 @@ fi
 brew install python
 brew install tree
 brew install git
+brew install composer
 
 ### Install MacOS Applications
 brew cask install google-chrome
@@ -26,6 +27,8 @@ brew cask install flux
 brew cask install day-o
 brew cask install daisydisk
 brew install github/gh/gh
+brew install heroku/brew/heroku
+
 
 # Youtube downloader and dependancies
 brew install ffmpeg
