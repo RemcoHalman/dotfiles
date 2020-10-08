@@ -43,15 +43,8 @@ alias djrun='./manage.py runserver'
 alias djmakemig='./manage.py makemigrations'
 alias djmigrate='./manage.py migrate'
 
-### Download youtube
-alias yt='youtube-dl -f best '
-alias yta='youtube-dl -x --audio-format mp3 --audio-quality 0 '
-alias ytflac='youtube-dl -x --audio-format flac --audio-quality 0 '
-
 # Default Settings
-alias python='python3.7'
 alias venv='python3 -m venv venv'
-alias pip='pip3'
 alias http='python -m http.server'
 
 # Navigating in the terminal
@@ -62,6 +55,3 @@ alias ....="cd ../../.."
 # Hide/Unhide Specific files
 alias hideFile="sudo chflags hidden "
 alias unHideFile="sudo chflags nohidden "
-
-# Github CLI 
-alias onlinerepo="gh repo view"

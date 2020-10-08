@@ -45,7 +45,7 @@ echo "dev folders created"
 dotfiledir=${homedir}/dotfiles
 
 # list of files/folders to symlink in ${homedir}
-files="bash_profile bashrc profile aliases private environments_vars functions.sh macos"
+files="shell_profile aliases private environments_vars functions.sh macos"
 
 # change to the dotfiles directory and adding custom commands folder
 echo "Changing to the ${dotfiledir} directory"
@@ -72,6 +72,3 @@ curl "https://raw.githubusercontent.com/git/git/master/contrib/completion/git-co
 
 # Run the Homebrew Script For a full os setup
 ./brew.sh
-
-# Setting up Visual Studio code + preferences
-./install_vsc_settings.sh
