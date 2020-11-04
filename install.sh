@@ -45,7 +45,7 @@ echo "dev folders created"
 dotfiledir=${homedir}/dotfiles
 
 # list of files/folders to symlink in ${homedir}
-files="shell_profile aliases private environments_vars functions.sh macos"
+files="shell_profile aliases private environments_vars functions.sh macos gitconfig"
 
 # change to the dotfiles directory and adding custom commands folder
 echo "Changing to the ${dotfiledir} directory"
