@@ -33,7 +33,7 @@ done
 
 echo "Code working folders created"
 
-workFolders="Python Django Flask PyQt Flutter Arduino C# cpp Wordpress Website Misc Personal Kivy"
+workFolders="Python Django Flask PyQt Arduino C# cpp Wordpress Website Personal"
 for workFolder in ${workFolders}; do
     echo "Creating working folder $workFolder in dev directory."
     mkdir ${sitesdir}/dev/${workFolder}_projects

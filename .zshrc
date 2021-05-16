@@ -37,3 +37,5 @@ fi
 
 # Setting PATH for Visual Studio Code (CLI usage)
 export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+export PATH="$PATH:/Users/remco/.asdf/installs/flutter/2.0.6-stable/bin"
+export ANDROID_SDK_ROOT="/usr/local/share/android-sdk"
