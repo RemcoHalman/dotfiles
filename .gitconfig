@@ -17,4 +17,4 @@
 	recent-branches = !git branch --sort=-committerdate | head
 	authors = !git log --format='%aN <%aE>' | grep -v 'users.noreply.github.com' | sort -u --ignore-case
 [commit]
-	template = .git-commit-template.txt
+	template = ~/dotfiles/.git-commit-template.txt
