@@ -61,3 +61,4 @@ alias unHideFile="sudo chflags nohidden "
 
 # Extra
 alias heic="magick mogrify -monitor -format jpg *.HEIC"
+alias pdf-convert="convert -density 300 -depth 8 -quality 100 -alpha remove "
